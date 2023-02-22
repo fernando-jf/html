@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/template04.css" media="all" onload="this.media='all'">,
+    <title>Contato e Localização</title>
+</head>
+<body>
+    <header>
+        <center>
+            <h2>Contato e Localização</h2>
+            <hr/>
+        </center>
+    </header>
+    <div class="mapa">
+        <h3>Localização - Maraca (Estádio Jornalista Mário Filho)</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.0343470688963!2d-43.23234448519736!3d-22.912103943820647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e5dba888b0d%3A0xf5f33188ee6274e5!2zTWFyYWNhbsOj!5e0!3m2!1spt-BR!2sbr!4v1677095200887!5m2!1spt-BR!2sbr" 
+        width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    <hr/>
+    <div class="formcontato">
+        <h3>Contato - Maraca (Estádio Jornalista Mário Filho)</h3>
+        <form name="formcontato1" target="_blank" action="https://webhook.site/fabfc5d1-b0bb-4e00-a7b2-e8d232b1cef9" method="post">
+          <table>
+            <tbody>
+                <tr>
+                    <td><input type="text" name="nome" id="inpt_nome" placeholder="Informe seu nome" required="true" minlength="3">*</input></td>
+                </tr>
+                <tr>
+                    <td><input type="email" name="email" id="inpt_email" placeholder="Informe seu email" required="true">*</input></td>
+                </tr>
+                <tr>
+                    <td><textarea name="msgtxt" id="txtmsg" cols="42" rows="16" placeholder="Digite a mensagem" required="true"></textarea></td>
+                    <td>*</td>
+                </tr>
+            </tbody>
+          </table>
+          <button class="button-submit" type="submit" id="btn-submit">Enviar</button>
+          <input name="Reset" type="reset" class="button-reset" value="Limpar">
+          <!--
+          <script>
+            document.getElementById("btn-submit").addEventListener("click", myFunction);  
+            function myFunction() {  
+              window.location.href="redirect.html";  
+            }
+          </script>
+          -->
+        </form>
+    </div>
+</body>
+</html>
